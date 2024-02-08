@@ -1,1 +1,1 @@
-$("#id_registrase").validate()
+$("#id_matricularse").validate()
