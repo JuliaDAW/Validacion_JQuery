@@ -1,5 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#id_registrarse{
+    width: 30%;
+    margin: auto;
+    padding-top: 17%;
+}
+fieldset{
+    padding: 15px;
+}
+legend{
+    font-size: 200%;
+}
+input[type="text"], input[type="password"]{
+    border: none;
+    border-bottom: 1px solid;
+}
 .error {
     color: red;
-    font-size: 12px;
+    font-size: 15px;
     margin-left: 5px;
 }
