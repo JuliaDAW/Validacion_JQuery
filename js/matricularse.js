@@ -23,6 +23,18 @@ $("#id_matricularse").validate({
         pais: {
             required: true
         },
+        cp: {
+            required: true,
+            number: true,
+            minlength: 5,
+            maxlength: 5
+        },
+        nacionalidad: {
+            required: true
+        },
+        direccion: {
+            required: true
+        },
         provincia: {
             required: true
         },
@@ -41,9 +53,18 @@ $("#id_matricularse").validate({
         estudio: {
             required: true
         },
-        repetir: {
+        repite: {
             required: true,
-        }
+        },
+        ordenador: {
+            required: true,
+        },
+        centro: {
+            required: true,
+        },
+        estudio: {
+            required: true,
+        },
     },
     messages: {
         nombre: {
@@ -83,9 +104,49 @@ $("#id_matricularse").validate({
         estudio: {
             required: "Por favor, seleccione su nivel de estudios"
         },
-        repetir: {
-            required: "Por favor, seleccione si desea repetir el curso"
+        repite: {
+            required: "Por favor, seleccione si ha repetido"
         },
+        ordenador: {
+            required: "Por favor, seleccione si tiene ordenador"
+        },
+        centro: {
+            required: "Por favor, seleccione su centro"
+        },
+        estudio: {
+            required: "Por favor, seleccione su curso de interés"
+        },
+        nacionalidad: {
+            required: "Por favor, seleccione su nacionalidad"
+        },
+        direccion: {
+            required: "Por favor, ingrese su dirección"
+        },
+        cp: {
+            required: "Por favor, ingrese su código postal",
+            number: "Por favor, ingrese un código postal válido",
+            minlength: "El código postal debe tener 5 caracteres",
+            maxlength: "El código postal debe tener 5 caracteres"
+        },
+        movil: {
+            required: "Por favor, ingrese su móvil",
+            minlength: "El móvil debe tener al menos 9 caracteres"
+        }
 
+    },
+    submitHandler: function(form) {
+        form.submit();
+    },
+    invalidHandler: function(event, validator) {
+        var errors = validator.numberOfInvalids();
+        if (errors) {
+            var message = errors == 1 ?
+                'Por favor, corrija el error en el formulario' :
+                'Por favor, corrija los ' + errors + ' errores en el formulario';
+            $("div.error span").html(message);
+            $("div.error").show();
+        } else {
+            $("div.error").hide();
+        }
     }
 })
