@@ -11,17 +11,21 @@
 <body>
     <form action="" method="post">
         <fieldset>
-            <legend>Matriculación</legend>
+            <legend>Registro</legend>
             <label for="id_nombre">Nombre:</label>
                 <input type="text" name="nombre" id="id_nombre"/>
                 <br/><br/>
-            <label for="id_apellido1">1º Apellido:</label>
-                <input type="text" name="apellido1" id="id_apellido1"/>
+            <label id="id_correo">Correo electrónico:</label>
+                <input type="text" name="correo" id="id_correo"/>
                 <br/><br/>
-            <label for="id_apellido2">2º Apellido:</label>
-                <input type="text" name="apelldio2" id="id_apellido2"/>
+            <label for="id_contrasenia">Contraseña:</label>
+                <input type="password" name="contrasenia" id="id_contrasenia"/>
                 <br/><br/>
-        <input type="submit" name="matricular" id="id_matricular" value="Matricularse"/>
+            <label id="id_repetir">Repetir contraseña:</label>
+                <input type="password" name="repetir" id="id_repetir"/>
+        </fieldset>
+            <br/>
+        <input type="submit" name="registrar" id="id_registro" value="Registrarse"/>
     </form>
 </body>
 </html>
