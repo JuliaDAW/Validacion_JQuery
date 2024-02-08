@@ -8,7 +8,7 @@ $("#id_registrarse").validate({
                 type: "post",
                 data: {
                     nombre: function() {
-                        return $("#nombre").val();
+                        return $("#id_nombre").val();
                     }
                 }
             }
