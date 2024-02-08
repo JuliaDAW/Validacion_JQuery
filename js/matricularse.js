@@ -133,6 +133,20 @@ $("#id_matricularse").validate({
             minlength: "El móvil debe tener al menos 9 caracteres"
         }
 
-
+    },
+    submitHandler: function(form) {
+        form.submit();
+    },
+    invalidHandler: function(event, validator) {
+        var errors = validator.numberOfInvalids();
+        if (errors) {
+            var message = errors == 1 ?
+                'Por favor, corrija el error en el formulario' :
+                'Por favor, corrija los ' + errors + ' errores en el formulario';
+            $("div.error span").html(message);
+            $("div.error").show();
+        } else {
+            $("div.error").hide();
+        }
     }
 })
