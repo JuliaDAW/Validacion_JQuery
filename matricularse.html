@@ -11,7 +11,7 @@
 <body>
     <form action="" method="post">
         <fieldset>
-            <legend>Matriculación</legend>
+            <legend>Datos Personales</legend>
             <label for="id_nombre">Nombre:</label>
                 <input type="text" name="nombre" id="id_nombre"/>
                 <br/><br/>
@@ -21,8 +21,51 @@
             <label for="id_apellido2">2º Apellido:</label>
                 <input type="text" name="apelldio2" id="id_apellido2"/>
                 <br/><br/>
-            <label for="id_curso">Curso:</label>
-                <input type="checkbox" name="check_curso" id="id_curso" value="1"/>
+            <label for="id_dni">DNI:</label>
+                <input type="text" name="dni" id="id_dni"/>
+                <br/><br/>
+            <label id="id_nacer">Fecha de Nacimiento:</label>
+                <input type="text" name="nacer" id="id_nacer"/>
+                <br/><br/>
+            <label id="id_pais">País de Nacimiento:</label>
+                <input type="text" name="pais" id="id_pais"/>
+                <br/><br/>
+            <label for="id_direccion">Dirección:</label>
+                <input type="text" name="direccion" id="id_direccion"/>
+                <br/><br/>
+            <label for="id_telefono">Teléfono Fijo:</label>
+                <input type="text" name="telefono" id="id_telefono"/>
+                <br/><br/>
+            <label for="id_movil">Teléfono Móvil:</label>
+                <input type="text" name="movil" id="id_movil"/>
+                <br/><br/>
+            <label for="id_correo">Correo electrónico:</label>
+                <input type="text" name="correo" id="id_correo"/>
+        </fieldset>
+        <fieldset>
+            <legend>Datos de Matriculación</legend>
+            <label id="id_estudio">Estudio:</label>
+                <select id="estudio">
+                    <option value="e_0">--Elija un estudio--</option>
+                    <option value="e_1">Infantil</option>
+                    <option value="e_2">Primaria</option>
+                    <option value="e_3">ESO</option>
+                    <option value="e_4">Bachillerato</option>
+                    <option value="e_5">CFGB</option>
+                    <option value="e_6">CFGM</option>
+                    <option value="e_7">CFGS</option>
+                    <option value="e_8">Universidad</option>
+                    <option value="e_9">Mater</option>
+                </select>
+                <br/><br/>
+            <label id="id_curso">Curso:</label>
+                <select id="id_curso">
+                    <option value="c_0">--Eliga </option>
+                </select>
+            <label for="id_curso">Repite:</label>
+                Sí<input type="radio" name="repetir" id="id_repetir" value="si"/>
+                No<input type="radio" name="repetir" id="id_repetir" value="no"/>
+                <br/><br/>
         </fieldset>
             <br/>
         <input type="submit" name="matricular" id="id_matricular" value="Matricularse"/>
