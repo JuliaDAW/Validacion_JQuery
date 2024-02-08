@@ -11,74 +11,76 @@
 </head>
 <body>
     <form action="m_completado.html" method="post" id="id_matricularse">
-        <fieldset>
-            <legend>Datos Personales</legend>
-            <label for="id_nombre">Nombre:</label>
-                <input type="text" name="nombre" id="id_nombre"/>
-                <br/><br/>
-            <label for="id_apellido1">1º Apellido:</label>
-                <input type="text" name="apellido1" id="id_apellido1"/>
-                <br/><br/>
-            <label for="id_apellido2">2º Apellido:</label>
-                <input type="text" name="apellido2" id="id_apellido2"/>
-                <br/><br/>
-            <label for="id_dni">DNI:</label>
-                <input type="text" name="dni" id="id_dni"/>
-                <br/><br/>
-            <label id="id_nacer">Fecha de Nacimiento:</label>
-                <input type="date" name="nacer" id="id_nacer"/>
-                <br/><br/>
-            <label id="id_pais">País de Nacimiento:</label>
-                <input type="text" name="pais" id="id_pais"/>
-                <br/><br/>
-            <label id="id_nacionalidad">Nacionalidad:</label>
-                <input type="text" name="nacionalidad" id="id_nacionalidad"/>
-                <br/><br/>
-            <label for="id_direccion">Dirección:</label>
-                <input type="text" name="direccion" id="id_direccion"/>
-                <br/><br/>
-            <label for="id_cp">Código Postal:</label>
-                <input type="text" name="cp" id="id_cp"/>
-                <br/><br/>
-            <label for="id_telefono">Teléfono Fijo:</label>
-                <input type="text" name="telefono" id="id_telefono"/>
-                <br/><br/>
-            <label for="id_movil">Teléfono Móvil:</label>
-                <input type="text" name="movil" id="id_movil"/>
-                <br/><br/>
-            <label for="id_correo">Correo electrónico:</label>
-                <input type="text" name="correo" id="id_correo"/>
-        </fieldset>
-        <fieldset>
-            <legend>Datos de Matriculación</legend>
-            <label id="id_estudio">Estudio:</label>
-                <select id="estudio">
-                    <option value="e_0">--Elija un estudio--</option>
-                    <option value="e_1">Infantil</option>
-                    <option value="e_2">Primaria</option>
-                    <option value="e_3">ESO</option>
-                    <option value="e_4">Bachillerato</option>
-                    <option value="e_5">CFGB</option>
-                    <option value="e_6">CFGM</option>
-                    <option value="e_7">CFGS</option>
-                    <option value="e_8">Universidad</option>
-                </select>
-                <br/><br/>
-            <label for="id_curso">Repite:</label>
-                Sí<input type="radio" name="repite" id="id_repetir" value="si"/>
-                No<input type="radio" name="repite" id="id_repetir" value="no"/>
-                <br/><br/>
-            <label for="id_ordenador">Tiene Ordenador:</label>
-                Sí<input type="checkbox" name="ordenador" id="id_ordenador" value="si"/>
-                No<input type="checkbox" name="ordenador" id="id_ordenador" value="no"/>
-                <br/><br/>
-            <label for="id_centro">Centro de Estudio:</label>
-                <input type="text" name="centro" id="id_centro"/>
-                <br/><br/>
-            <label for="id_observaciones">Observaciones:</label>
-                <br/>
-                <textarea name="observaciones" id="observaciones" placeholder="Alergias, enfermedades, minusvalías, etc."></textarea>
-        </fieldset>
+        <div class="centrar">
+            <fieldset>
+                <legend>Datos Personales</legend>
+                <label for="id_nombre">Nombre:</label>
+                    <input type="text" name="nombre" id="id_nombre"/>
+                    <br/><br/>
+                <label for="id_apellido1">1º Apellido:</label>
+                    <input type="text" name="apellido1" id="id_apellido1"/>
+                    <br/><br/>
+                <label for="id_apellido2">2º Apellido:</label>
+                    <input type="text" name="apellido2" id="id_apellido2"/>
+                    <br/><br/>
+                <label for="id_dni">DNI:</label>
+                    <input type="text" name="dni" id="id_dni"/>
+                    <br/><br/>
+                <label id="id_nacer">Fecha de Nacimiento:</label>
+                    <input type="date" name="nacer" id="id_nacer"/>
+                    <br/><br/>
+                <label id="id_pais">País de Nacimiento:</label>
+                    <input type="text" name="pais" id="id_pais"/>
+                    <br/><br/>
+                <label id="id_nacionalidad">Nacionalidad:</label>
+                    <input type="text" name="nacionalidad" id="id_nacionalidad"/>
+                    <br/><br/>
+                <label for="id_direccion">Dirección:</label>
+                    <input type="text" name="direccion" id="id_direccion"/>
+                    <br/><br/>
+                <label for="id_cp">Código Postal:</label>
+                    <input type="text" name="cp" id="id_cp"/>
+                    <br/><br/>
+                <label for="id_telefono">Teléfono Fijo:</label>
+                    <input type="text" name="telefono" id="id_telefono"/>
+                    <br/><br/>
+                <label for="id_movil">Teléfono Móvil:</label>
+                    <input type="text" name="movil" id="id_movil"/>
+                    <br/><br/>
+                <label for="id_correo">Correo electrónico:</label>
+                    <input type="text" name="correo" id="id_correo"/>
+            </fieldset>
+            <fieldset>
+                <legend>Datos de Matriculación</legend>
+                <label id="id_estudio">Estudio:</label>
+                    <select id="estudio">
+                        <option value="e_0">--Elija un estudio--</option>
+                        <option value="e_1">Infantil</option>
+                        <option value="e_2">Primaria</option>
+                        <option value="e_3">ESO</option>
+                        <option value="e_4">Bachillerato</option>
+                        <option value="e_5">CFGB</option>
+                        <option value="e_6">CFGM</option>
+                        <option value="e_7">CFGS</option>
+                        <option value="e_8">Universidad</option>
+                    </select>
+                    <br/><br/>
+                <label for="id_curso">Repite:</label>
+                    Sí<input type="radio" name="repite" id="id_repetir" value="si"/>
+                    No<input type="radio" name="repite" id="id_repetir" value="no"/>
+                    <br/><br/>
+                <label for="id_ordenador">Tiene Ordenador:</label>
+                    Sí<input type="checkbox" name="ordenador" id="id_ordenador" value="si"/>
+                    No<input type="checkbox" name="ordenador" id="id_ordenador" value="no"/>
+                    <br/><br/>
+                <label for="id_centro">Centro de Estudio:</label>
+                    <input type="text" name="centro" id="id_centro"/>
+                    <br/><br/>
+                <label for="id_observaciones">Observaciones:</label>
+                    <br/>
+                    <textarea name="observaciones" id="observaciones" placeholder="Alergias, enfermedades, minusvalías, etc."></textarea>
+            </fieldset>
+        </div>
             <br/>
         <input type="submit" name="matricular" id="id_matricular" value="Matricularse"/>
         <div class="error">

@@ -1,6 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#id_matricularse{
+    padding: 5%;
+}
+.centrar{
+    display: flex;
+}
+fieldset{
+    padding: 15px;
+    width: 43%;
+    margin: 0 2%;
+}
+legend{
+    font-size: 200%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+label, .error{
+    font-family: 'Courier New', Courier, monospace;
+}
+input[type="text"], input[type="password"]{
+    border: none;
+    border-bottom: 1px solid;
+}
 textarea{
     width: 500px;
     height: 150px;
+}
+input[type="submit"]{
+    padding: 5px;
+    transition: all 0.3s;
+}
+input[type="submit"]:hover{
+    background-color: black;
+    color: white;
 }
 .error {
     color: red;
