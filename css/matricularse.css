@@ -10,7 +10,7 @@
 }
 fieldset{
     padding: 15px;
-    width: 43%;
+    width: 50%;
     margin: 0 2%;
 }
 legend{
@@ -25,16 +25,21 @@ input[type="text"], input[type="password"]{
     border-bottom: 1px solid;
 }
 textarea{
-    width: 500px;
+    width: 350px;
     height: 150px;
 }
 input[type="submit"]{
     padding: 5px;
-    transition: all 0.3s;
-}
-input[type="submit"]:hover{
+    transition: all 0.5s;
+    width: 100%;
+    font-size: 130%;
     background-color: black;
     color: white;
+    border: 0px;
+}
+input[type="submit"]:hover{
+    cursor: pointer;
+    background-color: gray;
 }
 .error {
     color: red;

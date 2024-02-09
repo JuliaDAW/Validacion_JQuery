@@ -3,7 +3,7 @@
     padding: 0;
 }
 #id_registrarse{
-    width: 30%;
+    width: 37%;
     margin: auto;
     padding-top: 17%;
 }
@@ -20,6 +20,14 @@ label{
 input[type="text"], input[type="password"]{
     border: none;
     border-bottom: 1px solid;
+}
+input[type="submit"]{
+    padding: 5px;
+    transition: all 0.5s;
+}
+input[type="submit"]:hover{
+    background-color: black;
+    color: white;
 }
 .error {
     color: red;
