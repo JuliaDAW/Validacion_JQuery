@@ -1,3 +1,9 @@
+$.validator.addMethod("DNI", function(value) {
+    return /^[0-9]{8}[A-Za-z]{1}$/.test(value);
+}, "Por favor, ingrese un DNI válido");
+
+
+
 $("#id_matricularse").validate({
     rules: {
         nombre: {
@@ -14,7 +20,7 @@ $("#id_matricularse").validate({
         },
         dni: {
             required: true,
-            minlength: 9
+            DNI: true
         },
         nacer: {
             required: true,
