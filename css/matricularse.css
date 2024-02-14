@@ -11,7 +11,7 @@
 fieldset{
     padding: 15px;
     width: 50%;
-    margin: 0 2%;
+    margin: 0 5px;
 }
 legend{
     font-size: 200%;
@@ -45,4 +45,12 @@ input[type="submit"]:hover{
     color: red;
     font-size: 15px;
     margin-left: 5px;
+}
+@media screen and (max-width:950px){
+    .centrar{
+        display: block;
+    }
+    fieldset{
+        width: 96%;
+    }
 }
